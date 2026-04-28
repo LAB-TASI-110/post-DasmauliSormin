@@ -1,0 +1,203 @@
+TUJUAN (Apa yang ingin dicapai)
+
+Buat program yang dapat menghitung **total stok barang berdasarkan kode kategori yang diminta** dari sekumpulan data stok gudang.
+
+Program harus mampu:
+
+* Menerima banyak data stok
+* Memisahkan berdasarkan kategori
+* Menjumlahkan stok hanya untuk kategori tertentu
+* Menghasilkan output total stok kategori tersebut
+
+## 2️⃣ MASALAH UTAMA
+
+Gudang memiliki banyak barang dengan kategori berbeda.
+Admin gudang hanya ingin mengetahui **total stok dari satu kategori tertentu** tanpa menghitung semua kategori.
+
+Masalah:
+
+* Data stok bercampur antar kategori
+* Perlu filtering berdasarkan kode kategori
+* Perlu perhitungan total stok kategori target
+
+## 3️⃣ ALUR SOLUSI
+
+1. Input jumlah data barang (N)
+2. Input data barang (kategori + jumlah stok)
+3. Input kategori yang ingin dihitung
+4. Filter data sesuai kategori
+5. Jumlahkan stok kategori tersebut
+6. Tampilkan total stok
+
+## 4️⃣ DESKRIPSI OBJEKTIF SISTEM
+
+Sistem adalah program CLI (terminal) yang:
+
+* Mengolah input numerik & string
+* Menggunakan struktur data list
+* Melakukan filtering & agregasi data
+* Menghasilkan satu nilai output numerik
+
+---
+
+# ⚙️ SPESIFIKASI TEKNIS
+
+## Bahasa Pemrograman
+
+Python 3
+
+## Library
+
+Hanya standard library Python (tanpa library eksternal)
+
+## Database / Sistem Manajemen
+
+Tidak menggunakan database (in-memory processing)
+
+---
+
+# 🏗️ STRUKTUR PROGRAM
+
+## Struktur Data
+
+Gunakan list of dictionary:
+
+```
+barang = [
+   {"kategori": "GULA", "stok": 85},
+   {"kategori": "MINYAK", "stok": 120}
+]
+```
+
+---
+
+## INPUT PROGRAM
+
+1. N → jumlah data barang
+2. N baris data:
+
+   * kode kategori (string)
+   * jumlah stok (integer)
+3. kategori target (string)
+
+Contoh input:
+
+```
+4
+GULA 85
+MINYAK 120
+SERAGAM 5
+BUKU 22
+GULA
+```
+
+---
+
+## OUTPUT PROGRAM
+
+Output:
+
+```
+Total stok kategori GULA = 85
+```
+
+Jika tidak ditemukan:
+
+```
+Kategori tidak ditemukan
+```
+
+---
+
+# 🚫 HAL YANG HARUS DIHINDARI (NEGATIF)
+
+* Tidak boleh menggunakan database
+* Tidak boleh GUI
+* Tidak boleh library eksternal
+* Tidak boleh hardcode data
+* Harus menerima input dinamis
+
+---
+
+# 🔐 STANDAR KUALITAS & KEAMANAN
+
+* Validasi input integer
+* Case insensitive kategori
+* Tidak crash jika kategori tidak ditemukan
+* Clean code & readable
+
+---
+
+# 📌 LINGKUP PENGERJAAN
+
+Termasuk:
+
+* Input parsing
+* Penyimpanan data
+* Filtering
+* Aggregation
+* Output formatting
+
+Tidak termasuk:
+
+* Penyimpanan file
+* Web/app interface
+* Multi user system
+
+---
+
+# 👨‍💻 PERSONA AI
+
+Bertindak sebagai:
+
+> Senior Python Backend Developer yang membuat program CLI sederhana, aman, dan clean.
+
+---
+
+# 🪜 LANGKAH IMPLEMENTASI
+
+1. Minta input N
+2. Loop input data barang
+3. Simpan ke list dictionary
+4. Minta kategori target
+5. Loop & jumlahkan stok
+6. Tampilkan hasil
+
+---
+
+# 🔎 CONTOH INPUT OUTPUT
+
+### Input
+
+```
+5
+GULA 50
+MINYAK 30
+GULA 20
+BUKU 10
+GULA 5
+GULA
+```
+
+### Output
+
+```
+Total stok kategori GULA = 75
+```
+
+---
+
+# ⛔ PEMBATASAN KONTEKS
+
+Program hanya untuk:
+
+* Simulasi gudang sederhana
+* Data skala kecil-menengah
+* CLI environment
+buat kan aku code untuk permasalahan ini
+ini pakai java dan punya driver nama nya driver2 dan nama model nya model 2
+Model2 cannot be resolved to a type ini kenapa di drivernya dibilang kayak gini
+masih blm ada yang berubah
+mana lah langsung codenya
+pakagenya disini soal di buat pakage driver dan itu udah dari sananya
+buat yang model hanya pakage model doanh
