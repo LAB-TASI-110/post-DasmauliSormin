@@ -1,0 +1,119 @@
+1️⃣ TUJUAN (Apa yang ingin dicapai)
+
+Membangun sistem CLI sederhana untuk membantu operasional kafetaria IT Del dalam:
+
+mencatat menu makanan
+mencatat pesanan mahasiswa
+menghitung total pembayaran
+menampilkan ringkasan transaksi
+
+Tujuan akhir:
+👉 mempercepat pencatatan transaksi dan mengurangi kesalahan perhitungan manual.
+
+2️⃣ MASALAH UTAMA
+
+Permasalahan nyata di kafetaria kampus:
+
+Pesanan dicatat manual → rawan salah hitung
+Tidak ada sistem rekap transaksi sederhana
+Kasir kesulitan menghitung total cepat saat antrian panjang
+3️⃣ ALUR SISTEM
+Admin memasukkan daftar menu
+Kasir menerima pesanan pelanggan
+Sistem menghitung total otomatis
+Sistem menampilkan struk sederhana
+4️⃣ DESKRIPSI OBJEKTIF SISTEM
+
+Sistem berbasis terminal (CLI) yang:
+
+Mengelola data menu secara in-memory
+Menerima pesanan multi-item
+Menghitung total harga otomatis
+Menghasilkan output struk transaksi
+⚙️ SPESIFIKASI TEKNIS
+Bahasa Pemrograman
+
+Java (OOP + Package)
+
+Library
+
+Hanya Java Standard Library:
+
+java.util.Scanner
+java.util.ArrayList
+Database
+
+Tidak menggunakan database (in-memory)
+
+🏗️ STRUKTUR PROGRAM
+Package
+model  → class data
+driver → main program
+Struktur Class
+Class	Fungsi
+Menu	data menu makanan
+OrderItem	item pesanan
+Driver2	main program
+INPUT SISTEM
+Jumlah menu
+Nama menu + harga
+Jumlah pesanan
+Pilih menu + jumlah beli
+OUTPUT SISTEM
+Daftar menu
+Ringkasan pesanan
+Total pembayaran
+🚫 NEGATIF / LARANGAN
+
+Tidak boleh:
+
+GUI
+Database
+File storage
+Library eksternal
+Hardcode menu
+🔐 STANDAR KUALITAS
+Validasi input angka
+Tidak crash saat menu tidak ditemukan
+Clean OOP structure
+📌 LINGKUP
+
+Fokus:
+
+Pengelolaan menu
+Transaksi sederhana
+
+Tidak termasuk:
+
+Login
+Pembayaran digital
+Multi user
+👨‍💻 PERSONA AI
+
+Senior Java Backend Developer yang membuat sistem CLI sederhana, modular, clean.
+
+🪜 LANGKAH IMPLEMENTASI
+Input menu
+Tampilkan menu
+Input pesanan
+Hitung total
+Cetak struk
+🧪 CONTOH INPUT OUTPUT
+
+Input:
+
+Jumlah menu: 2
+Nasi Goreng 15000
+Mie Ayam 12000
+Jumlah pesanan: 2
+1 2
+2 1
+
+Output:
+
+Nasi Goreng x2 = 30000
+Mie Ayam x1 = 12000
+Total Bayar = 42000
+nah disini buat kan dulu aku code tentang ini sesuai dengan permasalahannya dan juga driver nya pake pakage yang nama nya pakage driver dan driver nya harus bernama Driver3 dan juga model nya pake pakage model dan nama model nya Model3
+
+tapi aku mau nya tampilannya itu ada menu menu nya  kayak nasi goreng mie goreng ayam geprek bihun goreng 3T dengan harga under 20k 
